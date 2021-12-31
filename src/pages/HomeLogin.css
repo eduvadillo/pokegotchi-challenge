@@ -1,0 +1,24 @@
+.homepage-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/images/pokehome2.png);
+  background-size: cover;
+}
+
+.left-container {
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+}
+
+.right-container {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container h1 {
+  text-align: center;
+}

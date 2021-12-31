@@ -1,0 +1,28 @@
+.my-games-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/images/pokegotchi.png);
+  background-size: cover;
+}
+
+.every-game-container {
+  height: 30vh;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid #ffcd00;
+  margin: 2rem;
+  color: #ffcd00;
+  text-align: center;
+  padding: 1rem;
+}
+
+.button-game {
+  height: 3rem;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 10rem;
+  background-color: wheat;
+  color: gray;
+}
