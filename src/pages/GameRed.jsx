@@ -36,6 +36,7 @@ function GameRed(props) {
   const [pokemonSearch, setPokemonSearch] = useState(``);
   const [pokemonFind, setPokemonFind] = useState(true);
   const [pokemonFindStats, setPokemonFindStats] = useState(true);
+  const [pokemonLegendary, setPokemonLegendary] = useState(false);
   const [pokemonAdded, setPokemonAdded] = useState(false);
   const [myPokemons, setMyPokemons] = useState(`empty`);
   const [error, setError] = useState(null);
@@ -59,10 +60,25 @@ function GameRed(props) {
   useEffect(() => {
     let pokemonLowerCase = pokemonSearch.toLowerCase();
 
-    P.getPokemonByName(`${pokemonLowerCase}`)
+    P.getPokemonSpeciesByName(pokemonLowerCase)
       .then((response) => {
-        setPokemonFind(response);
-        setPokemonFindStats(response.stats);
+        console.log(`legend****************ary`, response);
+
+        if (response.is_legendary === true) {
+          setPokemonFind(true);
+          setPokemonLegendary(true);
+        }
+        if (response.is_legendary === false) {
+          P.getPokemonByName(`${pokemonLowerCase}`)
+            .then((response) => {
+              setPokemonFind(response);
+              setPokemonFindStats(response.stats);
+              setPokemonLegendary(false);
+            })
+            .catch((error) => {
+              console.log("There was an ERROR: ", error);
+            });
+        }
       })
       .catch((error) => {
         console.log("There was an ERROR: ", error);
@@ -138,6 +154,7 @@ function GameRed(props) {
   if (loading === false) {
     return `loading`;
   } else {
+    // console.log(pokemonFind);
     return (
       <div className='game-red-container'>
         {/*  {pokemons.map((pokemon) => (
@@ -163,6 +180,11 @@ function GameRed(props) {
                 Find
               </button> */}
             </form>
+            {pokemonLegendary === true ? (
+              <h2 className='poke-legendary'>You can't start with a legendary pokemon</h2>
+            ) : (
+              <></>
+            )}
             {pokemonFind === true ? (
               <></>
             ) : (

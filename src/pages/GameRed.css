@@ -116,3 +116,7 @@
 .add-pokemon-to-play form button {
   height: 7vh;
 }
+
+.poke-legendary {
+  color: red;
+}
