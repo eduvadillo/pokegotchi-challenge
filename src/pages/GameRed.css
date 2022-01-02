@@ -125,6 +125,8 @@
   .game-red-container {
     flex-direction: column;
     height: auto;
+    min-height: 90vh;
+    padding-bottom: 2vh;
   }
   .left-container {
     width: 100vw;
@@ -175,5 +177,8 @@
   .pokegotchi-container {
     padding-top: 8vh;
     height: 126vh !important;
+  }
+  .my-pokemons-div {
+    margin-left: 5vw;
   }
 }
