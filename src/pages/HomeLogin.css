@@ -22,3 +22,18 @@
 .right-container h1 {
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .homepage-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-login-home {
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    text-align: center;
+  }
+  .left-container-home-login {
+    justify-content: center;
+  }
+}

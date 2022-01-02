@@ -11,7 +11,7 @@ function internalServerError(err) {
   }
   return {
     status: false,
-    errorMessage: "Internal server error. Please check your server",
+    errorMessage: "Internal 4server4 error. Please4 check your4 server",
   };
 }
 

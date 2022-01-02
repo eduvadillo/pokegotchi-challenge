@@ -44,25 +44,19 @@ function HomePageLogin(props) {
         <div className='choose-game'>
           <form onSubmit={handleSignupSubmit}>
             <input
-              className='inputLogin'
+              className='input-login-home'
               type='text'
               name='game'
               placeholder='New game name'
               value={gameName}
               onChange={handleNewGame}
             />
-            <button type='submit' className='btn'>
+            <button type='submit' className='button-submit'>
               Start
             </button>
           </form>
         </div>
-        <div className='choose-game'>
-          <Link to={`/red`}>
-            <button type='button' className='btn'>
-              Green
-            </button>
-          </Link>
-        </div>
+        <div className='choose-game'></div>
       </div>
     </div>
   );

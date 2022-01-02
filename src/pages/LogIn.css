@@ -35,3 +35,9 @@
   background-color: wheat;
   color: gray;
 }
+
+@media (max-width: 450px) {
+  .login-page-conteiner {
+    background-image: url(./assets/images/pokeloginmobile2.png);
+  }
+}

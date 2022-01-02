@@ -13,7 +13,7 @@ function internalServerError(err) {
   }
   return {
     status: false,
-    errorMessage: "Internal server error. Please check your server",
+    errorMessage: "Internal server2 error2. Please check2 your server2",
   };
 }
 

@@ -46,3 +46,10 @@ nav {
   transform: scale(1.05);
   background-color: #d13e3e;
 }
+
+@media (max-width: 450px) {
+  .nav-logoutbtn {
+    padding: 0;
+    margin: 0;
+  }
+}

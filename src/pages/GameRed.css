@@ -120,3 +120,60 @@
 .poke-legendary {
   color: red;
 }
+
+@media (max-width: 450px) {
+  .game-red-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-container {
+    width: 100vw;
+  }
+
+  .search-pokemon-div {
+    padding-right: 3vw;
+  }
+
+  .search-pokemon-div h2 {
+    text-align: center;
+  }
+  .search-pokemon-form {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .pokemon-find-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .pokemon-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .every-stat {
+    width: 42vw;
+  }
+  .pokemon-photos img {
+    width: 17vw;
+    height: 15vh;
+  }
+  .pokemon-type img {
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .right-container {
+    width: 100vw;
+  }
+
+  .title-game-name {
+    display: none;
+  }
+  .pokegotchi-container {
+    padding-top: 8vh;
+    height: 126vh !important;
+  }
+}

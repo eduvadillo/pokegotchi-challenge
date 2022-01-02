@@ -26,3 +26,14 @@
   background-color: wheat;
   color: gray;
 }
+
+@media (max-width: 450px) {
+  .every-game-container {
+    height: 24vh;
+  }
+  .my-games-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+}
