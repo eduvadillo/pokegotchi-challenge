@@ -1,15 +1,17 @@
 .homepage-container {
   display: flex;
-  height: 100vh;
+  height: 93vh;
   width: 100vw;
   background-image: url(./assets/images/pokehome2.png);
   background-size: cover;
 }
 
-.left-container {
+.left-container-login {
   display: flex;
   width: 50vw;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .right-container {
@@ -17,10 +19,21 @@
   width: 50vw;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .right-container h1 {
   text-align: center;
+}
+
+.choose-game form {
+  display: flex;
+  flex-direction: column;
+}
+.choose-game form input {
+  margin-bottom: 3vh;
+  text-align: center;
+  border-radius: 40px;
 }
 
 @media (max-width: 450px) {
@@ -30,7 +43,6 @@
   }
   .input-login-home {
     margin-bottom: 2vh;
-    margin-left: 22vw;
     text-align: center;
   }
   .left-container-home-login {
@@ -38,6 +50,12 @@
   }
 
   .left-container {
-    justify-content: center;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-container h5 {
+    text-align: center;
   }
 }

@@ -36,8 +36,12 @@ function HomePageLogin(props) {
 
   return (
     <div className='homepage-container'>
-      <div className='left-container'>
+      <div className='left-container-login'>
         <h1>INSTRUCTIONS</h1>
+        <h5>
+          The objective of the game is to learn about taking care of pokemons and get a legendary
+          pokemon
+        </h5>
       </div>
       <div className='right-container'>
         <h1>Choose new name for the game</h1>

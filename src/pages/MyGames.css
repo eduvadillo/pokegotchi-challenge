@@ -4,6 +4,8 @@
   width: 100vw;
   background-image: url(./assets/images/pokegotchi.png);
   background-size: cover;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .every-game-container {

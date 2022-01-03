@@ -95,14 +95,14 @@ function Pokegotchi(props) {
               </>
             ))}
           </div>
-          <div>
+          <div className='div-form-poke'>
             <form onSubmit={handleBeforePokemonSubmit}>
-              <button type='submit' className='btn'>
+              <button type='submit' className='every-stat'>
                 Previous
               </button>
             </form>
             <form onSubmit={handleNextPokemonSubmit}>
-              <button type='submit' className='btn'>
+              <button type='submit' className='every-stat'>
                 Next
               </button>
             </form>

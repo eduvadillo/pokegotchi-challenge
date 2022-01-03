@@ -166,7 +166,7 @@ function GameRed(props) {
         ))} */}
         <div className='left-container'>
           <div className='search-pokemon-div'>
-            <h2>Search pokemons and find your favorites to play</h2>
+            <h2>Find your favorites pokemons to play</h2>
             <form className='search-pokemon-form' onSubmit={handlePokemonSearchSubmit}>
               <input
                 className='input-pokemon-form'
@@ -298,7 +298,7 @@ function GameRed(props) {
             )}
           </div>
         </div>
-        <div className='right-container'>
+        <div className='right-container-red'>
           <div className='title-game-name'>
             <h2>My pokemons for {myPokemons[0].gameName} are:</h2>
           </div>

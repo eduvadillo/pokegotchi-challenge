@@ -1,18 +1,18 @@
 .pokegotchi-container {
   display: flex;
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   background-image: url(./assets/images/pokegotchiYellow.png);
   background-size: cover;
 }
 
 .left-container-poke {
-  height: 100vh;
+  height: 92vh;
   width: 20vw;
 }
 
 .central-container-poke {
-  height: 100vh;
+  height: 92vh;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 .right-container-poke {
-  height: 100vh;
+  height: 92vh;
   width: 20vw;
 }
 
@@ -37,4 +37,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.div-form-poke {
+  display: flex;
+  width: 40vw;
+  justify-content: center;
+}
+
+.div-form-poke form {
+  padding-top: 5vh;
 }

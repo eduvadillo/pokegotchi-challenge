@@ -1,21 +1,20 @@
 .game-red-container {
   display: flex;
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   background-image: url(./assets/images/pokehome2.png);
   background-size: cover;
+  align-items: center;
 }
 
 .search-pokemon-div {
-  padding-left: 3vw;
   display: flex;
-  padding-bottom: 12vh;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
 }
 
 .search-pokemon-form {
-  padding-left: 2vw;
+  padding-bottom: 2vh;
 }
 
 .button-pokemon-form {
@@ -34,7 +33,6 @@
   width: 13rem;
   background-color: wheat;
   color: gray;
-  margin-left: 11vw;
 }
 
 .left-container {
@@ -44,7 +42,7 @@
   color: #004b8e;
 }
 
-.right-container {
+.right-container-red {
   display: flex;
   width: 50vw;
   flex-direction: column;
@@ -74,15 +72,20 @@
 .pokemon-stats {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pokemon-photos {
-  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vh;
 }
 
 .pokemon-type {
   display: flex;
-  margin-left: 14vw;
+  justify-content: center;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
 }
 
 .pokemon-type img {
@@ -108,7 +111,6 @@
 
 .add-pokemon-to-play {
   padding-top: 6vh;
-  padding-right: 5vw;
   display: flex;
   justify-content: center;
 }
